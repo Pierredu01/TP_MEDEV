@@ -54,7 +54,12 @@ public class PlateauDeJeu {
     }
     
     public void affiche(){
-        
+        int i = c.getNumero();
+        int j = d + i;
+        if (j > 39){
+            j = j - 40;
+        }
+        return this.plateau.get(j);
     }
     
     public void avance(Case c, int d){
